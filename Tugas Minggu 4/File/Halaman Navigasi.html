@@ -1,0 +1,253 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-gray-100">
+    <div class="flex">
+      <!-- Sidebar -->
+      <div class="w-16 bg-white h-screen flex flex-col items-center py-4">
+        <div
+          class="bg-orange-500 text-white rounded-full w-10 h-10 flex items-center justify-center mb-4"
+        >
+          E
+        </div>
+        <div class="flex flex-col space-y-4">
+          <i class="fas fa-home text-orange-500"> </i>
+          <i class="fas fa-calendar-alt text-gray-400"> </i>
+          <i class="fas fa-chart-bar text-gray-400"> </i>
+          <i class="fas fa-cog text-gray-400"> </i>
+        </div>
+      </div>
+      <!-- Main Content -->
+      <div class="flex-1 p-6">
+        <!-- Header -->
+        <div class="flex justify-between items-center mb-6">
+          <h1 class="text-2xl font-bold">Dashboard</h1>
+          <div class="flex items-center space-x-4">
+            <div class="text-right">
+              <p class="text-sm font-semibold">Angelina</p>
+              <p class="text-xs text-gray-500">Admin</p>
+            </div>
+            <img
+              alt="User profile picture"
+              class="rounded-full w-10 h-10"
+              src="https://placehold.co/40x40"
+            />
+          </div>
+        </div>
+        <!-- Filters -->
+        <div class="bg-white p-4 rounded-lg shadow mb-6">
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <div>
+              <label
+                class="block text-sm font-medium text-gray-700"
+                for="start-date"
+              >
+                Start Date
+              </label>
+              <input
+                class="mt-1 block w-full border-gray-300 rounded-md shadow-sm"
+                id="start-date"
+                type="date"
+              />
+            </div>
+            <div>
+              <label
+                class="block text-sm font-medium text-gray-700"
+                for="end-date"
+              >
+                End Date
+              </label>
+              <input
+                class="mt-1 block w-full border-gray-300 rounded-md shadow-sm"
+                id="end-date"
+                type="date"
+              />
+            </div>
+            <div class="flex items-end">
+              <button
+                class="w-full bg-orange-500 text-white py-2 px-4 rounded-md"
+              >
+                Search
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Summary Cards -->
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-4 mb-6">
+          <div class="bg-white p-4 rounded-lg shadow">
+            <p class="text-sm text-gray-500">Total Omzet</p>
+            <p class="text-2xl font-bold">Rp 8.000.000</p>
+          </div>
+          <div class="bg-white p-4 rounded-lg shadow">
+            <p class="text-sm text-gray-500">Total Reservation</p>
+            <p class="text-2xl font-bold">100</p>
+          </div>
+          <div class="bg-white p-4 rounded-lg shadow">
+            <p class="text-sm text-gray-500">Total Visitor</p>
+            <p class="text-2xl font-bold">500</p>
+          </div>
+          <div class="bg-white p-4 rounded-lg shadow">
+            <p class="text-sm text-gray-500">Total Rooms</p>
+            <p class="text-2xl font-bold">12</p>
+          </div>
+        </div>
+        <!-- Room Cards -->
+        <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4">
+          <!-- Repeat this block for each room card -->
+          <div class="bg-white p-4 rounded-lg shadow">
+            <p class="text-lg font-semibold">Aster Room</p>
+            <p class="text-sm text-gray-500">Percentage of Usage</p>
+            <div class="flex items-center space-x-2">
+              <div class="w-12 h-12">
+                <img
+                  alt="Usage chart"
+                  class="w-full h-full"
+                  src="https://placehold.co/48x48"
+                />
+              </div>
+              <p class="text-xl font-bold">80%</p>
+            </div>
+            <p class="text-sm text-gray-500">Omzet</p>
+            <p class="text-lg font-bold">Rp 2.000.000</p>
+          </div>
+          <div class="bg-white p-4 rounded-lg shadow">
+            <p class="text-lg font-semibold">Bluebell Room</p>
+            <p class="text-sm text-gray-500">Percentage of Usage</p>
+            <div class="flex items-center space-x-2">
+              <div class="w-12 h-12">
+                <img
+                  alt="Usage chart"
+                  class="w-full h-full"
+                  src="https://placehold.co/48x48"
+                />
+              </div>
+              <p class="text-xl font-bold">80%</p>
+            </div>
+            <p class="text-sm text-gray-500">Omzet</p>
+            <p class="text-lg font-bold">Rp 2.000.000</p>
+          </div>
+          <div class="bg-white p-4 rounded-lg shadow">
+            <p class="text-lg font-semibold">Camellia Room</p>
+            <p class="text-sm text-gray-500">Percentage of Usage</p>
+            <div class="flex items-center space-x-2">
+              <div class="w-12 h-12">
+                <img
+                  alt="Usage chart"
+                  class="w-full h-full"
+                  src="https://placehold.co/48x48"
+                />
+              </div>
+              <p class="text-xl font-bold">80%</p>
+            </div>
+            <p class="text-sm text-gray-500">Omzet</p>
+            <p class="text-lg font-bold">Rp 2.000.000</p>
+          </div>
+          <div class="bg-white p-4 rounded-lg shadow">
+            <p class="text-lg font-semibold">Camellia Room</p>
+            <p class="text-sm text-gray-500">Percentage of Usage</p>
+            <div class="flex items-center space-x-2">
+              <div class="w-12 h-12">
+                <img
+                  alt="Usage chart"
+                  class="w-full h-full"
+                  src="https://placehold.co/48x48"
+                />
+              </div>
+              <p class="text-xl font-bold">80%</p>
+            </div>
+            <p class="text-sm text-gray-500">Omzet</p>
+            <p class="text-lg font-bold">Rp 2.000.000</p>
+          </div>
+          <div class="bg-white p-4 rounded-lg shadow">
+            <p class="text-lg font-semibold">Aster Room</p>
+            <p class="text-sm text-gray-500">Percentage of Usage</p>
+            <div class="flex items-center space-x-2">
+              <div class="w-12 h-12">
+                <img
+                  alt="Usage chart"
+                  class="w-full h-full"
+                  src="https://placehold.co/48x48"
+                />
+              </div>
+              <p class="text-xl font-bold">80%</p>
+            </div>
+            <p class="text-sm text-gray-500">Omzet</p>
+            <p class="text-lg font-bold">Rp 2.000.000</p>
+          </div>
+          <div class="bg-white p-4 rounded-lg shadow">
+            <p class="text-lg font-semibold">Bluebell Room</p>
+            <p class="text-sm text-gray-500">Percentage of Usage</p>
+            <div class="flex items-center space-x-2">
+              <div class="w-12 h-12">
+                <img
+                  alt="Usage chart"
+                  class="w-full h-full"
+                  src="https://placehold.co/48x48"
+                />
+              </div>
+              <p class="text-xl font-bold">80%</p>
+            </div>
+            <p class="text-sm text-gray-500">Omzet</p>
+            <p class="text-lg font-bold">Rp 2.000.000</p>
+          </div>
+          <div class="bg-white p-4 rounded-lg shadow">
+            <p class="text-lg font-semibold">Camellia Room</p>
+            <p class="text-sm text-gray-500">Percentage of Usage</p>
+            <div class="flex items-center space-x-2">
+              <div class="w-12 h-12">
+                <img
+                  alt="Usage chart"
+                  class="w-full h-full"
+                  src="https://placehold.co/48x48"
+                />
+              </div>
+              <p class="text-xl font-bold">80%</p>
+            </div>
+            <p class="text-sm text-gray-500">Omzet</p>
+            <p class="text-lg font-bold">Rp 2.000.000</p>
+          </div>
+          <div class="bg-white p-4 rounded-lg shadow">
+            <p class="text-lg font-semibold">Camellia Room</p>
+            <p class="text-sm text-gray-500">Percentage of Usage</p>
+            <div class="flex items-center space-x-2">
+              <div class="w-12 h-12">
+                <img
+                  alt="Usage chart"
+                  class="w-full h-full"
+                  src="https://placehold.co/48x48"
+                />
+              </div>
+              <p class="text-xl font-bold">80%</p>
+            </div>
+            <p class="text-sm text-gray-500">Omzet</p>
+            <p class="text-lg font-bold">Rp 2.000.000</p>
+          </div>
+          <div class="bg-white p-4 rounded-lg shadow">
+            <p class="text-lg font-semibold">Camellia Room</p>
+            <p class="text-sm text-gray-500">Percentage of Usage</p>
+            <div class="flex items-center space-x-2">
+              <div class="w-12 h-12">
+                <img
+                  alt="Usage chart"
+                  class="w-full h-full"
+                  src="https://placehold.co/48x48"
+                />
+              </div>
+              <p class="text-xl font-bold">80%</p>
+            </div>
+            <p class="text-sm text-gray-500">Omzet</p>
+            <p class="text-lg font-bold">Rp 2.000.000</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
